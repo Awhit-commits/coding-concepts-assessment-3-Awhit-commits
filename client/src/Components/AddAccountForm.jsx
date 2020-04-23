@@ -14,6 +14,7 @@ export default class AddAccountForm extends Component {
              
         }
     }
+    //Handle Values in the input field
     handleChange = (event)=>{
         if(event.target.name ==="name"){
             this.setState({accountName:event.target.value})
@@ -31,6 +32,8 @@ export default class AddAccountForm extends Component {
         }
 
     }
+
+    //When button is pressed, account is created in database
     handleSubmission = async (event)=>{
         event.preventDefault();
         // this.props.addAccount(this.state)

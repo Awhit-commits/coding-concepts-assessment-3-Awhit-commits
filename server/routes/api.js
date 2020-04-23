@@ -27,7 +27,7 @@ router.get('/',(req,res)=>{
 //Get An Account by ID
 router.get('/:_id',(req,res)=>{
     console.log(`Get One`)
-    res.send("Get One")
+    // res.send("Get One")
     
     bankCollection.findOne({_id:req.params._id},(errors,results)=>{
         errors ? res.send(errors):res.send(results)

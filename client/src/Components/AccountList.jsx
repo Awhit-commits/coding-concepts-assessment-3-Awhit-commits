@@ -10,11 +10,11 @@ export default class AccountList extends Component {
     };
     // console.log(this.props.accountArray);
   }
-
+//Method to load data from database
   componentDidMount() {
     this.loadData();
   }
-
+//Function to retrieve data from database
   loadData = async () => {
     let response = await fetch("/api");
     let json = await response.json();
@@ -29,9 +29,9 @@ export default class AccountList extends Component {
           {this.state.bankAccount.map((account) => {
             return (
               <div key={account._id}>
-                <Link to={`info/${account._id}`}>
-                  <p>Name: {account.accountName}</p>
-                </Link>
+                
+                  <p>Name: <Link to={`info/${account._id}`}>{account.accountName}</Link></p>
+                
                 <p>Account Number: {account.accountNumber}</p>
               </div>
             );
