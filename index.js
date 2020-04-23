@@ -12,7 +12,7 @@ app.use('/api', api);
 // Database stuff
 // const mongoose = require('mongoose');
 // mongoose.set('useCreateIndex', true);
-// const mongoDb = 'mongodb+srv://YOURUSER:YOURPASSWORD@cluster0-mhpvz.gcp.mongodb.net/cs_database?retryWrites=true&w=majority';
+// const mongoDb = 'mongodb+srv://ndrwwhtmr:VaUOsbhP8iq8kqQ2@cluster0-mhpvz.gcp.mongodb.net/cs_database?retryWrites=true&w=majority';
 // console.log(`Connecting to Mongo @ ${mongoDb}...`);
 // mongoose.connect(mongoDb, {useNewUrlParser: true,  useUnifiedTopology: true, useFindAndModify: false });
 // const db = mongoose.connection;
